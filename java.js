@@ -1,7 +1,7 @@
 
 "use strict";
 
-let userName=prompt('What\'s your name?');
+let userName=prompt('What\'s your name?').toLocaleLowerCase();
  
 alert(userName + 'you are Welcome!');
 
@@ -47,10 +47,66 @@ alert(userName + 'you are Welcome!');
  console.log(userName,myAge,myGender,myId,myMajor,userAct,userAge,userSelect,userTopic);
 
  alert("you are welcome" + userName);
- confirm("you won agift from my website contact my email to deliver it to your place ");
+ confirm("you won agift from my website contact my email to deliver it to your place ")
 
- for(let i=0;i<=10;i++){
- 
- let noOfbrands=prompt("How many brands do you like?");
- if(noOfbrands<=5){alert("Thats too low number of brands");}else if(noOfbrands>5<=10){alert("Thats too normal you are perfect");}else if(noOfbrands>10){alert("Thats too high number of brands");}else{alert("Wrong input");}
+
+let clothesBrand=['zara','barbarie','channel','mango','lv'];
+console.log(clothesBrand.length);
+console.log(clothesBrand);
+
+
+let attempts=4;
+let userInput=prompt("guss how many number inside my website from 0 to 10?");
+while(attempts){
+  if(userInput==5){
+    alert("thats correct answer!!")
+    break;
+  }
+
+  else if(userInput==4 && userInput==6){alert("you are so close");
+}
+    else if(userInput>0 && userInput<4){
+
+      alert("thats far a little bit");}
+
+else if(userInput>6 && userInput<=10){alert("you get so far");}
+else{alert("wrong input please a value between 0 to 10");}
+
+    
+    attempts-=1;
+    userInput=prompt('plearse try again you have : '+attempts+' remaining for you');
+    if(!attempts){
+    break;
+  
  }
+}
+
+
+
+
+
+attempts=6;
+  let userInput=prompt(" guss the clothesbrand please");
+  while(attempts){
+    for (let i=0;i<clothesBrand.length;i++){
+      if(userInput===clothesBrand[i]){
+
+        alert("thats right answer!");
+        correct=true;
+        break;
+      }
+      attempts-=1;
+      userInput=prompt('plearse try again you have : '+attempts+' remaining for you');
+      if(!attempts){
+      break;
+    
+   }
+  }
+ 
+}
+
+
+
+
+
+
