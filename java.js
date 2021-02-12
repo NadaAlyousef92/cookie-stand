@@ -140,7 +140,6 @@ function guessNumber(){
   let attempts=4;
 let userInput=prompt("guss how many number inside my website from 0 to 10?");
 while(attempts){
-<<<<<<< HEAD
 if(userInput==5){ alert("thats correct answer!!")
  break;
 }
@@ -190,7 +189,6 @@ correct=false;
 
 
 
-=======
  if(userInput==5){
    alert("thats correct answer!!")
    break;}
@@ -228,7 +226,6 @@ let attempts=6;
       if(!attempts){
         alert('you run out of attempts\n the answer list is: '+clothesBrand);
         break;}
->>>>>>> a45a916fb9d570e765404f9770625f6eaebb3aad
 
  }
 }
