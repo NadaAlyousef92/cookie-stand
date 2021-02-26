@@ -108,30 +108,38 @@ function guessNumber() {
     }
 }
 
+
+
+
+
 function guessBrand() {
-    debugger;
-    let attempts = 6;
-    let correct = false;
-    let clothesBrand = ["bulgari", "barbarie", "channel", "mango", "lv"];
-    let userInput2 = prompt(" guss the clothesbrand please");
-
-    for (let i = 0; i < clothesBrand.length; i++) {
-        if (userInput2.toLowerCase() == clothesBrand[i]) {
-            alert("thats right answer!");
-            correct = true;
-            if (attempts.toLowerCase()) {
-
-                attempts -= 1;
-                userInput2 = prompt('plearse try again you have : ' + attempts + ' remaining for you');
-                if (!attempts) {
-                    alert("wrong input please try again");
 
 
 
 
+    let clothesBrand = ["bulgari", "barbarie", "channel", "mango", "lv", "zara"];
 
-                }
-            }
+
+    console.log(clothesBrand);
+    let attempts;
+    let B;
+
+    let myFevorate = prompt(' please name one of my favorite clothesBrand');
+
+
+    for (let B = 5; B > 0; --B) {
+        if (clothesBrand.includes(myFevorate)) {
+            alert('thats true answer');
+            alert('Thank you for participate of my gussing game');
+            Score++
+            break;
+        } else {
+            myFevorate = prompt('you have ' + (B) + ' attempts remaning');
         }
     }
+    if (B = 1) {
+        alert('this is my favorite clothes Brand  ("bulgari", "barbarie", "channel", "mango", "lv","zara"')
+    }
+    alert('thank you ' + userName + ' for visiting my web page');
+    alert('you`r score is ' + Score + ' of 7');
 }
