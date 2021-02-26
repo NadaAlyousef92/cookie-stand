@@ -74,23 +74,23 @@ active();
 function gussNumber() {
     let attempts = 0;
     let noAttempts = false;
-    const num = 19;
+    const num = 5;
     while (attempts < 4) {
-        let guess = prompt('Can you guess a number between 0 and 20?');
+        let guess = prompt('Can you guess a number between 0 and 10?');
         if (guess > num) {
-            alert('That\'s too close!');
+            alert('That\'s  high!');
         } else if (guess < num) {
-            alert('That\'s too far!');
+            alert('That\'s  low!');
         } else if (guess == num) {
             alert('thats true good job.');
             noAttempts = true;
-            score++;
+
 
         }
         attempts++;
     }
     if (!noAttempts) {
-        alert('Sorry, you ran out of attempts the correct number is 19');
+        alert('Sorry, you ran out of attempts the correct number is 5');
     }
 }
 gussNumber();
