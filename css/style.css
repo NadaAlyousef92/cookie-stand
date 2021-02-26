@@ -1,36 +1,21 @@
-
-
 .emphasize-dark {
     box-shadow: 2 10 20px 30px rgba(185, 76, 76, 0.35)
 }
 
+main {
+    font-family: cursive;
+    font-size: xx-large;
+}
 
+body {
+    background-image: url("../img/famous-brands-collage.jpg");
+}
 
-  body {
-    font-family: 'Dancing Script', cursive;
-    }
+h2 {
+    border-bottom: 4px dotted rgb(182, 109, 133);
+}
 
-    body {
-      background-image: url("../img/famous-brands-collage.jpg");
-      
-     }
-
-     h2 {
-      border-bottom: 4px dotted rgb(182, 109, 133);
-     }
-     
-
-   
-
-
-
-     
-      
-  
-
-
-
-   
-
-     
-  
+ol li {
+    font-family: cursive;
+    font-size: xx-large;
+}
